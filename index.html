@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo-black (1).png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Search">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="openSidebar()">
+            <i class="fa-solid fa-bars fa-beat"></i>
+        </div>
+        <div id="sidebar">
+            <div id="close" onclick="closeSidebar()">
+                &#10005;
+            </div>
+            <div class="search" style="margin-top: 20px;">
+                <input type="text" placeholder="search ...">
+                <input type="submit" value="Search">
+            </div>
+            <div class="sidebar-items">
+                <div class="trending">
+                    <h2>
+                        Trending
+                    </h2>
+                    <ul>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Movers & Shakers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h3>
+                        Digital Content And Devices
+                    </h3>
+                    <ul>
+                        <li><a href="#">Amazon Kindle E-readers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Shop By Category
+                    </h2>
+                    <ul>
+                        <li><a href="#">Mobile , tablets & Accessories</a></li>
+                        <li><a href="#">Computer 7 office Supplies</a></li>
+                        <li><a href="#">TVs and Electronics</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Help & Settings
+                    </h2>
+                    <ul>
+                        <li><a href="#">your Account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> English</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="backGround"></div>
+                <div class="swiper-slide" id="backGround2"></div>
+                <div class="swiper-slide" id="backGround3"></div>
+                <div class="swiper-slide" id="backGround4"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="products" style="padding: 50px 0;">
+        <h2>Top Ramadan Sale Categories | Up to 50% off</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/laptop.jpg">
+                        <h3>Electronics</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/Automove.jpg">
+                        <h3>Automotive</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/Fashion.jpg">
+                        <h3>Fashion</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/Watches.jpg">
+                        <h3>Watches</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/Tvs.jpg">
+                        <h3>TVs</h3>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="Images/Kitchen.jpg">
+                        <h3>Kitchen Appliances</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="position: relative; top: 3px;"></div>
+        </div>
+    </section>
+    <section class="products" style="padding: 50px 0;">
+        <h2>Shop Prime exclusive deals</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Macbook.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 30% off</span> Ramadan Deals</h6>
+                        <h5>Save on MacBook, HP and other Laptops</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Camera.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 33% off</span> Ramadan Deals</h6>
+                        <h5>Security Cameras</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;" class="link-sales">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Oppo.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 45% off</span> Ramadan Deals</h6>
+                        <h5>Bose Headphones& Earbuds</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Printer.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>40% off</span> Ramadan Deals</h6>
+                        <h5>Save on Printers</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Shoes.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 29% off</span> Ramadan Deals</h6>
+                        <h5>Active Shoes</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/AnkerProduct.jpg"
+                                style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 30% off</span> Ramadan Deals</h6>
+                        <h5>Anker Products</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="position: relative; top: 3px;"></div>
+        </div>
+    </section>
+    <section class="products" style="padding: 50px 0;">
+        <h2>Explore more Ramadan Sale Categories | Up to 50% off</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/jitchen essentials.jpg"
+                                style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Beuty.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;" class="link-sales">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/decorations.jpg"
+                                style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Furniture.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Speakers.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Baby Product.jpg"
+                                style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="position: relative; top: 3px;"></div>
+        </div>
+    </section>
+    <section class="products" style="padding: 50px 0;">
+        <h2>Shop Prime exclusive deals</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Kindlw.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 20% off</span> Deal</h6>
+                        <h5>Save on Kindle E-Readers</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Adida.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 30% off</span> Deal</h6>
+                        <h5>Adidas Shoes</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;" class="link-sales">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/polo.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>EGB 2850 and under</span> Deal</h6>
+                        <h5>US Polo Clothing</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Dicw.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to27% off</span> Deal</h6>
+                        <h5>Dice boxers Pack of five</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/OutDoors.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 12% off</span> Deal</h6>
+                        <h5>Save on OutDoor Essentials</h5>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#" style="text-decoration: none;">
+                        <div style="height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="Images/Zina.jpg" style="max-height: 184px; margin: auto; max-width: 224px;">
+                        </div>
+                        <h6><span>Up to 30% off</span> Deal</h6>
+                        <h5>Save on Home Essentials</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination" style="position: relative; top: 3px;"></div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What our customers are saying</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="Images/Boy.jpg" alt="Customer 1">
+                </div>
+                <div class="testimonial-text">
+                    <p>"I've been shopping with this store for years and they always provide great products and
+                        excellent customer service. I highly recommend them!"</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="Images/girl.jpg" alt="Customer 2">
+                </div>
+                <div class="testimonial-text">
+                    <p>"I recently purchased a product from this store and was very happy with my experience. The
+                        product arrived quickly and was exactly what I was looking for."</p>
+                    <h3>Jane Smith</h3>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-img">
+                    <img src="Images/boy (2).jpg" alt="Customer 3">
+                </div>
+                <div class="testimonial-text">
+                    <p>"I had an issue with my order and the customer service team was quick to resolve the problem.
+                        They were very helpful and friendly throughout the entire process."</p>
+                    <h3>Bob Johnson</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Buy?</h2>
+        <button><a href="#">Shop Now</a></button>
+    </section>
+
+    <footer>
+        <div class="Footer-top">
+            <p>Back to top</p>
+        </div>
+        <div class="footer-middle">
+            <div>
+                <h3>Get to Know Us</h3>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div>
+                <h3>Shop with Us</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Your Addresses</a>
+                <a href="#">Your Lists</a>
+            </div>
+            <div>
+                <h3>Make Money with Us</h3>
+                <a href="#">Protect and build your brand</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Fulfillment by Amazon</a>
+            </div>
+            <div>
+                <h3>Let Us Help You</h3>
+                <a href="#">Help</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Returns & Replacements</a>
+                <a href="#">Amazon App Download</a>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="logo-bottom">
+                <img src="Images/logo-black (1).png" alt="">
+            </div>
+            <div class="select-bottom">
+                <div>
+                    <Select>
+                        <option value="">English</option>
+                        <option value="">Arabic</option>
+                    </Select>
+                </div>
+                <div>
+                    <select>
+                        <option value="">Egypt</option>
+                        <option value="">USA</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        // Initialize Swiper
+        var bannerSwiper = new Swiper('.banner .swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.banner .swiper-pagination',
+            },
+        }); var productsSwiper = new Swiper('.products .swiper-container', {
+            loop: true,
+            slidesPerView: 5,
+            spaceBetween: 40,
+            pagination: {
+                el: '.products .swiper-pagination',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }
+        });
+    </script>
+    <script src="main.js"></script>
