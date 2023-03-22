@@ -182,16 +182,18 @@ nav ul li a {
 }
 
 #backGround{
-  background-image: url(Images/pexels-pixabay-264636.jpg);
+  background-image: url(Images/online-6107598_1280.png);
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #backGround2{
   background-image: url(Images/pexels-igor-ovsyannykov-205961.jpg);
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 #backGround3{
   background-image: url(Images/pexels-pixabay-50987.jpg);
