@@ -240,6 +240,7 @@ select:hover {
     width: 300px;
     border: 1px solid lightgray;
     padding: 25px;
+    position: relative;
 }
 
 .Product-Details{
@@ -259,11 +260,35 @@ select:hover {
 .Product-Details h5{
     margin-top: 10px;
     color: #3e3e3e;
+    margin-bottom: 20px;
+}
+
+.Add-to-cart{
+    background-color: rgb(202, 16, 202);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+
+.Quick-view{
+    background-color: #fff;
+    color: rgb(202, 16, 202);
+    border: 1px solid rgb(202, 16, 202);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
 }
 
 main{
     display: grid;
-    gap: 50px;
+    gap: 40px;
     grid-template-columns: auto auto auto;
 }
 
@@ -308,8 +333,11 @@ main{
         text-align: center;
     }
     .product-buy{
-        width: 260px;
+        width: 280px;
         padding: 5px;
+    }
+    .Quick-view , .Add-to-cart{
+        position: static;
     }
 }
 
