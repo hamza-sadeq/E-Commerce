@@ -5,35 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="View.css">
-    <title>Quick View Page</title>
+    <link rel="stylesheet" href="view.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Product Details</title>
 </head>
 
 <body>
-    <div class="quick-view-container">
-        <div style="position: absolute; right: 0; top: 0px; margin: 0 20px;">
-            <a href="Product.html" class="close-btn">&times;</a>
+    <header>
+        <div class="logo">
+            <img src="Images/logo-black (1).png" alt="">
         </div>
-        <div class="quick-view-header">
-            <h2 class="product-name">Romba Men's Winter Casual Trunks</h2>
-            <span class="product-price">EGP299.00</span>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Search">
         </div>
-        <div class="content">
-            <div class="quick-view-content">
-                <img src="https://m.media-amazon.com/images/I/41skP+kLEmL._AC_.jpg" alt="Product Image"
-                    class="product-image">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="openSidebar()">
+            <i class="fa-solid fa-bars fa-beat"></i>
+        </div>
+        <div id="sidebar">
+            <div id="close" onclick="closeSidebar()">
+                &#10005;
             </div>
-            <div class="quick-view-footer">
-                <div>
-                    <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-                        error iusto excepturi, tempora optio doloribus eum doloremque consequatur et inventore.</p>
+            <div class="search" style="margin-top: 20px;">
+                <input type="text" placeholder="search ...">
+                <input type="submit" value="Search">
+            </div>
+            <div class="sidebar-items">
+                <div class="trending">
+                    <h2>
+                        Nav Links
+                    </h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">products</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
                 </div>
-                <a class="add-to-cart-btn" href="#">Add to Cart</a>
-                <a class="view-details-btn" href="#">View Details</a>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Trending
+                    </h2>
+                    <ul>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Movers & Shakers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h3>
+                        Digital Content And Devices
+                    </h3>
+                    <ul>
+                        <li><a href="#">Amazon Kindle E-readers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Shop By Category
+                    </h2>
+                    <ul>
+                        <li><a href="#">Mobile , tablets & Accessories</a></li>
+                        <li><a href="#">Computer 7 office Supplies</a></li>
+                        <li><a href="#">TVs and Electronics</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Help & Settings
+                    </h2>
+                    <ul>
+                        <li><a href="#">your Account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> English</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-
+    </header>
+    <figure>
+        <div class="Product-img">
+            <img src="https://m.media-amazon.com/images/I/41skP+kLEmL._AC_.jpg">
+        </div>
+        <div class="Product-Details">
+            <p class="name">Romba Men's Winter Casual Trunks</p>
+            <hr>
+            <h1>EGP299.99</h1>
+            <p class="Pay">All prices include VAT.Buy with installments and pay EGP 1,305.99 for 60 months with select banks</p>
+            <br>
+            <br>
+            <a href="#">Add To Cart</a>
+        </div>
+    </figure>
 </body>
+<script src="main.js"></script>
 
 </html>
