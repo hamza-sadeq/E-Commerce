@@ -16,59 +16,44 @@
     background-color: #fff;
   }
   
-  .product {
-    display: flex;
-  }
-  
-  .product-image {
-    flex-basis: 50%;
-    margin-right: 20px;
-  }
-  
-  .product-image img {
-    max-width: 100%;
-  }
-  
-  .product-details {
-    flex-basis: 50%;
-  }
-  
-  .product-details h2 {
-    font-size: 28px;
+  h1 {
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
-  .product-price {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: red;
-  }
-  
-  .product-description {
+  form label {
     font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 20px;
+    width: 100%;
   }
   
-  .product-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  form textarea {
+    height: 150px;
   }
   
-  a {
+  button[type="submit"] {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
     transition: background-color 0.3s ease;
   }
   
-  a:hover {
+  button[type="submit"]:hover {
     background-color: #0062cc;
   }
   

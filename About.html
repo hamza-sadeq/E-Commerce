@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/logo-black (1).png" alt="">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Search">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <a href="Cart.html">
+            <div class="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>2</p>
+            </div>
+        </a>
+        <div class="menu-icon" onclick="openSidebar()">
+            <i class="fa-solid fa-bars fa-beat"></i>
+        </div>
+        <div id="sidebar">
+            <div id="close" onclick="closeSidebar()">
+                &#10005;
+            </div>
+            <div class="search" style="margin-top: 20px;">
+                <input type="text" placeholder="search ...">
+                <input type="submit" value="Search">
+            </div>
+            <div class="sidebar-items">
+                <div class="trending">
+                    <h2>
+                        Nav Links
+                    </h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Product.html">products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Trending
+                    </h2>
+                    <ul>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Movers & Shakers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h3>
+                        Digital Content And Devices
+                    </h3>
+                    <ul>
+                        <li><a href="#">Amazon Kindle E-readers</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Shop By Category
+                    </h2>
+                    <ul>
+                        <li><a href="#">Mobile , tablets & Accessories</a></li>
+                        <li><a href="#">Computer 7 office Supplies</a></li>
+                        <li><a href="#">TVs and Electronics</a></li>
+                        <li><a href="#">Women's Fashion</a></li>
+                    </ul>
+                </div>
+                <div class="trending" style="padding-top: 20px;">
+                    <h2>
+                        Help & Settings
+                    </h2>
+                    <ul>
+                        <li><a href="#">your Account</a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> English</a></li>
+                        <li><a href="#">Egypt</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  <main>
+    <section id="hero">
+      <h1>About Us</h1>
+    </section>
+    
+    <section id="about">
+      <div class="container">
+        <h2>Who We Are</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+        <p>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
+        
+        <h2>What We Do</h2>
+        <p>Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed, nulla.</p>
+        <p>Donec porta diam eu massa. Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Porto. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="main.js"></script>
+</html>
