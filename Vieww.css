@@ -72,3 +72,9 @@
     background-color: #0062cc;
   }
   
+
+@media(max-width: 630px){
+  .product{
+    flex-direction: column;
+  }
+}
